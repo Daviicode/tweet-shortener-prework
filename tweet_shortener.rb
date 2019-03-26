@@ -47,7 +47,11 @@ end
 
 
 def shortened_tweet_turncator(tweet)
-  
+  tweet = word_substituter(tweet)
+  if tweet.length > 140
+    tweet[0..140]
+  else 
+    
 end
   
 
